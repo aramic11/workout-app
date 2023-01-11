@@ -8,11 +8,13 @@ const categoryData = require('./categoryData.json');
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  await Category.bulkCreate(categoryData);
   await Workout.bulkCreate(workoutData);
-  await User.bulkCreate(userData);
+  await Category.bulkCreate(categoryData);
+  await User.bulkCreate(userData, {
+    individualHooks: true,
+    returning: true,
+  });
 
   process.exit(0);
 };
-
 seedDatabase();

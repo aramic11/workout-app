@@ -1,11 +1,20 @@
 [
     {
-      "name": ""
+      "name": "Abs"
     },
     {
-      "name": ""
+      "name": "Arms"
     },
     {
-      "name": ""
+      "name": "Back"
+    },
+    {
+      "name": "Chest"
+    },
+    {
+      "name": "Legs"
+    },
+    {
+      "name": "Shoulders"
     }
   ]
