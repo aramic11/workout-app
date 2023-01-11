@@ -1,23 +1,552 @@
 [
   {
-    "id": "",
-    "title": "",
-    "description": "",
-    "category_id": "",
+    "title": "Ab Wheel",
+    "description": "Hold the ab wheel with both hands and kneel on the floor. Slowly roll the wheel forward in a controlled manner to stretch out as far as you can then pause for a moment and pull yourself back",
+    "category_id": "1",
     "user_id": ""
   },
   {
-    "id": "",
-    "title": "",
-    "description": "",
-    "category_id": "",
+    "title": "Bicycle Crunch",
+    "description": "Bicycle crunches begin in a similar position to normal crunches, but with the legs elevated and knees bent. Place your hands on your head with your elbows pointed directly outwards. Then, crunch. Bring your shoulders and head toward your legs. With a slight twisting motion to get the elbows as close to the knees as possible",
+    "category_id": "1",
     "user_id": ""
   },
   {
-    "id": "",
-    "title": "",
-    "description": "",
-    "category_id": "",
+    "title": "Crunch",
+    "description": "Lay supine in a relaxed position with your knees bent.
+    Hold a weight plate directly over your chest and press it to extension.
+    Raise your knees to 90 degrees, at which point they will be perpendicular to the floor.
+    Exhale as you reach towards your toes with the weight plate.
+    Once your abs are fully contracted and your upper back is off the floor, slowly lower yourself back to the starting position.
+    Complete for the assigned number of repetitions",
+    "category_id": "1",
     "user_id": ""
-  }
+  },
+  {
+    "title": "Flat Knee Raise",
+    "description": "Leg raises involve lying face up completely flat, with the arms at the sides of the torso, before the legs are elevated and held for around a second. The legs should rise to around a 40-degree angle to really target the lower abs, and this should continue for 30 seconds, with 30 seconds rest before moving on to the next exercise sets",
+    "category_id": "1",
+    "user_id": ""
+  },
+  {
+    "title": "Hanging Knee Raise",
+    "description": "The twisting hanging knee raise hits the lower abs and obliques. You can hang off literally anything that will hold your weight for this exercise. Most people will hang from a pull up bar. Hang off the with a slightly wider than shoulder width grip.
+    Once you're hanging with your feet slightly off the floor, pull your knees up and across to the left side of your body.
+    Pause, then slowly lower them back down.
+    Now raise your knees up and across to the right hand side of your body.
+    Lower back to start position. This is one rep.
+    Repeat for desired reps.",
+    "category_id": "1",
+    "user_id": ""
+  },
+  {
+    "title": "Jackknife Sit Up",
+    "description": "",
+    "category_id": "1",
+    "user_id": ""
+  },
+  {
+    "title": "Knees to Elbows",
+    "description": "",
+    "category_id": "1",
+    "user_id": ""
+  },
+  {
+    "title": "Oblique Crunch",
+    "description": "",
+    "category_id": "1",
+    "user_id": ""
+  },
+  {
+    "title": "Plank",
+    "description": "",
+    "category_id": "1",
+    "user_id": ""
+  },
+  {
+    "title": "Russian Twist",
+    "description": "",
+    "category_id": "1",
+    "user_id": ""
+  },
+  {
+    "title": "Side Bend",
+    "description": "",
+    "category_id": "1",
+    "user_id": ""
+  },
+  {
+    "title": "Sit Ups",
+    "description": "",
+    "category_id": "1",
+    "user_id": ""
+  },
+  {
+    "title": "Superman",
+    "description": "",
+    "category_id": "1",
+    "user_id": ""
+  },
+  {
+    "title": "Side Plank",
+    "description": "They take the same position as the plank, however, involve the motion of turning the torso 90 degrees so that one arm is pointing directly upwards. The other remains on the floor from the elbow down.",
+    "category_id": "1",
+    "user_id": ""
+  },
+  {
+    "title": "V Up",
+    "description": "",
+    "category_id": "1",
+    "user_id": ""
+  },
+  ///-----ARMS--------------------------------------
+  {
+    "title": "Preacher Curl",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Tricep Pushdown",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Bicep Curl",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Bench Dip",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Hammer Curl",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Incline Curl",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Reverse Curl Dumbell",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Skullcrusher",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Tricep Extension",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Bench Press - Close Grip w/ Barbell",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Wrist Roller",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Tricep Dip",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Cable Kickback",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Reverse Curl Barbell",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  {
+    "title": "Upright Row",
+    "description": "",
+    "category_id": "2",
+    "user_id": ""
+  },
+  //----BACK-----------------------------
+  {
+    "title": "Back Extension",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Bent Over One Arm Row (Dumbbell)",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Bent Over Row (Barbell)",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Chin Up",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Deadlift",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Incline Row",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Iso-Lateral Row",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Lat Pulldown",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Pull Up",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Romanian Deadlift",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Seated Row",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Shrug",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "T Bar Row",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Upright Row (Barbell)",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  {
+    "title": "Sumo Deadlift",
+    "description": "",
+    "category_id": "3",
+    "user_id": ""
+  },
+  //------------------------CHEST-----------------
+  {
+    "title": "Cable Crossover",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "Bench Press",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "Chest Dip",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "Chest Fly",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "Decline Bench Press",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "Incline Bench Press (Dumbbells)",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "Iso-Lateral Chest Press",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "Pullover (Dumbbell)",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "Push Ups",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "Pec Deck",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "Around the World",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "Twist Flys (Dumbbell)",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "Low Cable Press",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+  {
+    "title": "High Cable Press",
+    "description": "",
+    "category_id": "4",
+    "user_id": ""
+  },
+//---------LEGS------------------------
+{
+  "title": "Box Jump",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Bulgarian Split Squat",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Calf Press",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Front Squat",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Goblet Squat",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Hack Squat",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "High Knee Skips",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Hip Abductor",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Hip Thrust",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Leg Extension",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Leg Press",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Lunges",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Leg Curl",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Seated Calf Raises",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+{
+  "title": "Squat (Barbell)",
+  "description": "",
+  "category_id": "5",
+  "user_id": ""
+},
+//------------------SHOULDERS------------------
+{
+  "title": "Face Pull (Cable)",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Lateral Raise (Dumbbell)",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Seated Dumbbell Press",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Front Raise (Barbell)",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Overhead Press (Dumbbell)",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Push Press",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Reverse Fly (Cable)",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Shoulder Press (Machine)",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Upright Row (Dumbbell)",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Seated 6 Ways (Dumbbell)",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Front Raise (Cable)",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Lateral Raise (Cable)",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Shrug",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Reverse Fly (Machine)",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+{
+  "title": "Dumbbell Snatch",
+  "description": "",
+  "category_id": "6",
+  "user_id": ""
+},
+
 ]
