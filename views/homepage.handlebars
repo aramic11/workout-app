@@ -1,24 +1,24 @@
 <!-- Loop over each object in the projects array -->
-{{#each projects as |project| }}
+<h2>Upcoming Workouts</h2>
+{{#each workouts as |workout| }}
 <div class="row mb-4 project">
   <div class="col-md-5">
-    <h2>
+    <h3>
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
-      <a href="/project/{{project.id}}">{{project.name}}</a>
-    </h2>
+      <a href="/workout/{{workout.id}}">{{workout.name}}</a>
+    </h3>
     <p>
-      <span for="img" aria-label="money">💲</span>
       <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!
+      <span class="workout-title">{{workout.name}}</span>
     </p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+    <button class="btn btn-primary" type="add">Add Workout</button>
   </div>
   <div class="col-md-7">
     <p>
-      {{project.description}}
+      {{workout.description}}
     </p>
   </div>
 </div>
+{{!-- Want to render recent workouts with workout and related information. Also an Add Workout functionality with a modal perhaps. --}}
+{{!-- Additional attributes - dateScheduled, totalReps/sets, timeElapsed --}}
 {{/each}}
