@@ -17,6 +17,7 @@ Calendar.init(
     },
     date: {
       type: DataTypes.DATE,
+      defaultValue: new Date()
     },
     workout_id: {
       type: DataTypes.INTEGER,
