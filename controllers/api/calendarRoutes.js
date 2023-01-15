@@ -2,14 +2,14 @@ const router = require('express').Router();
 const { Calendar, Workout } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.post('/', withAuth, async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
   try {
     const calendarData = await Workout.findAll({
       ...req.body,
       user_id: req.session.user_id,
     });
 
-    res.status(200).json(newCalendar);
+    res.status(200).json(calendarData);
   } catch (err) {
     res.status(400).json(err);
   }
