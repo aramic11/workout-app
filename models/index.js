@@ -1,24 +1,52 @@
-const User = require('./User');
-const Workout = require('./Workout');
-const Category = require('./Category');
 const Calendar = require('./Calendar');
+const Program = require('./Program');
+const Session = require('./Session');
+const ProgramWorkouts = require('./ProgramWorkouts');
+const SessionWorkouts = require('./SessionWorkouts');
+const User = require("./User");
 
-User.hasMany(Workout, {
+SessionWorkouts.belongsTo(Session, {
+  foreignKey: 'session_id',
+});
+
+Session.hasMany(SessionWorkouts, {
+  foreignKey: 'session_id',
+  onDelete: 'CASCADE',
+});
+
+ProgramWorkouts.belongsTo(Program, {
+  foreignKey: 'program_id',
+});
+
+Program.hasMany(ProgramWorkouts, {
+  foreignKey: 'program_id',
+  onDelete: 'CASCADE',
+});
+
+Session.belongsTo(User, {
   foreignKey: 'user_id',
-  onDelete: 'CASCADE'
 });
 
-Category.hasMany(Workout, {
-  foreignKey: 'category_id',
-  onDelete: 'CASCADE'
+User.hasMany(Session, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
 });
 
-Workout.belongsTo(User, {
-  foreignKey: 'user_id'
+Program.belongsTo(User, {
+  foreignKey: 'user_id',
 });
 
-Workout.belongsTo(Category, {
-  foreignKey: 'category_id'
+User.hasMany(Program, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
 });
 
-module.exports = { User, Workout, Category, Calendar };
+
+module.exports = {
+  Calendar,
+  Program,
+  ProgramWorkouts,
+  Session,
+  SessionWorkouts,
+  User,
+};
