@@ -1,25 +1,6 @@
-<!-- Loop over each object in the projects array -->
-<h2>Upcoming Workouts</h2>
-{{#each workouts as |workout| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    <h3>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      <a href="/workout/{{workout.id}}">{{workout.name}}</a>
-    </h3>
-    <p>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="workout-title">{{workout.name}}</span>
-    </p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{workout.description}}
-    </p>
-  </div>
-</div>
-{{!-- Want to render recent workouts with workout and related information. Also an Add Workout functionality with a modal perhaps. --}}
-{{!-- Additional attributes - dateScheduled, totalReps/sets, timeElapsed --}}
-{{/each}}
-<button class="btn btn-primary" type="search">Find a Workout</button>
-<button class="btn btn-primary" type="add">Add a Workout</button>
+ <section class="homepage"> <br>
+        <h3>Welcome to our Workout App!</h3>
+        <section class="homepageText">
+            <p>Please look around and try out all of our cool features! We hope to hear 
+        </section>
+    </section>

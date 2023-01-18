@@ -1,40 +1,47 @@
 <div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
-
-    <form class="form login-form">
+  <div class="col-12 col-md-6">
+    <form class="form login-form" class="content has-text-centered"></form>
+      <h3 class="is-size-3">Login</h3>
       <div class="form-group">
         <label for="email-login">Email:</label>
-        <input class="form-input" type="text" id="email-login" />
+        <br>
+        <input class="form-input" type="email" id="email-login" required />
       </div>
       <div class="form-group">
         <label for="password-login">Password:</label>
-        <input class="form-input" type="password" id="password-login" />
+        <br>
+        <input class="form-input" type="password" id="password-login" required />
       </div>
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">Login</button>
+        <button class="btn btn-primary" type="submit">Log In</button>
       </div>
-      {{!-- Where Google login will go if we include --}}
     </form>
   </div>
-  <div class="col-md-6">
-    <h2>Signup</h2>
-
+  <div class="col-12 col-md-6">
     <form class="form signup-form">
+      <h3 class="is-size-3">Sign Up</h3>
       <div class="form-group">
-        <label for="name-signup">Name:</label>
-        <input class="form-input" type="text" id="name-signup" />
+        <label for="name-signup">Username:</label>
+        <br>
+        <input class="form-input" type="text" id="name-signup" required />
       </div>
       <div class="form-group">
         <label for="email-signup">Email:</label>
-        <input class="form-input" type="text" id="email-signup" />
+        <br>
+        <input class="form-input" type="email" id="email-signup" required />
       </div>
       <div class="form-group">
         <label for="password-signup">Password:</label>
-        <input class="form-input" type="password" id="password-signup" />
+        <br>
+        <input class="form-input" type="password" id="password-signup" required />
       </div>
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">Signup</button>
+        <label for="passRetype">Re-type Password:</label>
+        <br>
+        <input type="password" id="passRetype" required />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Sign Up</button>
       </div>
     </form>
   </div>
