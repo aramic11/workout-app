@@ -9,7 +9,7 @@ const programRoutes = require('./programRoutes');
 
 router.use('/calendar', calendarRoutes);
 router.use('/session', sessionRoutes);
-router.use("/users", userRoutes);
+router.use('/users', userRoutes);
 router.use('/exercise',exerciseRoutes);
 router.use('/program', programRoutes);
 
