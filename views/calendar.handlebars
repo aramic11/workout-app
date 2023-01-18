@@ -1,5 +1,49 @@
-<div class="text-center">
-{{!-- Will look into adding a calendar functionality (maybe new technology?).  --}}
+<h2>Calendar</h2>
+{{!-- {{#each workouts as |workout|}}
+  <div class='container-fluid'>
+    <div class='row'>
+      <div class='col-4 list-container'>
+        <div class='card'>
+          <ul class='list-group'></ul>
+        </div>
+      </div>
+      <div class='col-8'>
+        <input
+          class='note-title'
+          placeholder='Note Title'
+          maxlength='28'
+          type='text'
+        />
+        <textarea class='note-textarea' placeholder='Note Text'></textarea>
+      </div>
+    </div>
+  </div>
+{{/each}} --}}
+
+<div class="row">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Reps</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+        <tbody>
+        {{#each workouts}}
+                <tr>
+                    <td>{{workouts.id}}</td>
+                    <td>{{workouts.name}}</td>
+                    <td>{{workouts.category}}</td>
+                    <td>{{workouts.reps}}</td>
+                    <td>{{workouts.date}}</td>
+                </tr>
+        {{else}}
+        <p>No workouts to display</p>
+        {{/each}}
+        </tbody>
+    </table>
 </div>
-<div id="calendar"></div>
-<script src = "/js/calendar.js"></script>
+<script src='/js/calendar.js'></script>
