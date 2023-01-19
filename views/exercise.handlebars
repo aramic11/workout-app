@@ -1,29 +1,29 @@
 <!-- Exercise -->
-<section>
-    <button type="button"> Create New Program</button>
-    <button>Select a Program</button>
-    <section>
-        <select>
-            <!----List Programs here-->
+<section class="exercise">
+    <button class="createNewWorkoutBtn" type="button">Create New Program</button>
+    <button class="selectProgramBtn">Select a Program</button>
+    <section class="selectProgramContainer">
+        <select class="programOptionSelectEl">
+            <!-- List Programs here-->
         </select>
-        <button>Select</button>
+        <button class="selectBtn">Select</button>
     </section>
     <br>
-    <form action="javascript:saveToDB();">
+    <form class='sessionModel' action="javascript:saveToDB();">
 
         <div>
             <label for="date">Session Date:</label>
             <input type="date" class='date' name="workoutDate" min="2023-01-01" required>
         </div>
-        <section>
+        <section class="exerciseLog">
             <!-- exercise tables will go here -->
         </section>
-        <section>
+        <section class="openExerciseLog">
             <div>
-                <h3> Session Example</h3>
+                <h3 class="program">Sample Session</h3>
             </div><br>
-            <h4>Bench Press</h4>
-            <table>
+            <h4 class="exerciseName">Bench Press</h4>
+            <table class="trainingTable">
                 <tr>
                     <th>Set</th>
                     <th>Reps</th>
@@ -55,8 +55,9 @@
             </table><br>
         </section>
         <br>
-        <button type="submit">Save Session to Database</button>
+        <button type="submit" class="saveSesh save_db">Save Session to Database</button>
     </form>
+</section>
 
 
 {{#if logged_in}}
