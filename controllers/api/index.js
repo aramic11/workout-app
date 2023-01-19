@@ -6,8 +6,6 @@ const userRoutes = require("./userRoutes");
 const exerciseRoutes = require('./exerciseRoutes');
 const programRoutes = require('./programRoutes');
 
-
-
 router.use('/calendar', calendarRoutes);
 router.use('/session', sessionRoutes);
 router.use("/users", userRoutes);
