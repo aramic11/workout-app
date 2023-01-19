@@ -57,7 +57,98 @@
         <br>
         <button type="submit" class="saveSesh save_db">Save Session to Database</button>
     </form>
+
+
+
+    <!-- Modal- Program Creation-->
+    <div class="modal createWorkoutEl">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Create New Program</p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section>
+                <section class="exerciseSearchContainer">
+                    <!-- To look at the saved exercises and quick search-->
+                    <button class="savedExercisesBtn">View Saved Exercises</button>
+                    <button class="quickSearchToggle">Quick Search</button>
+                    <section id="intensityCriterias">
+                        <!-- Intensitty Criteras for the user to chose -->
+                        <section class="intensity">
+                            <p><u><b>Intensity</b></u></p>
+                            <select id="intensitySelectionEl" name="intensity">
+                                <option value=""></option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </section>
+                        <section class="muscle">
+                            <!-- Muscle categories for exercises-->
+                            <p><u><b>Muscle Group</b></u></p>
+                            <select id="muscleSelectionEl" name="muscle">
+                                <option value=""></option>
+                                <option value="abdominals">Abdominals</option>
+                                <option value="biceps">Biceps</option>
+                                <option value="chest">Chest</option>
+                                <option value="forearms">Forearms</option>
+                                <option value="glutes">Glutes</option>
+                                <option value="hamstrings">Hamstrings</option>
+                                <option value="lats">Lats</option>
+                                <option value="quadriceps">Quadriceps</option>
+                                <option value="traps">Traps</option>
+                                <option value="triceps">Triceps</option>
+                            </select>
+                        </section>
+                    </section>
+                    <section class="counter">
+                        <label for="quickSearch">Search</label>
+                        <input id='quickSearch' type='text' class="search-bar" placeholder="Bench Press">
+                    </section>
+
+                    <button class="searchBtn">Search</button>
+
+                    <!-- Saved Exercises section-->
+                    <br>
+                    <section class="savedExercisesContainer">
+                        <h4>Saved Exercises</h4>
+                        <section class="savedExerciseSection">
+                        </section>
+                        <!-- To set up and remove workouts when clicked -->
+                        <br>
+                        <button class="setupBtn">Continue Setting up the Program</button>
+                        <button class="removeBtn">Remove All</button>
+                    </section>
+                    <br>
+                    <section class="searchResultsEl">
+                        <h4>Search Results</h4>
+                        <section class="exerciseSelections">
+
+                            <!--Once workouts have been selected, click on this btn to save-->
+                        </section>
+                        <button class="exerciseSaveBtn">Save Selected</button>
+                    </section>
+                    <br>
+                </section>
+                <!-- To finish your workout program-->
+                <form class='setupForm' action="javascript:finishSetup();">
+                    <section class="setupSectionEl is-flex-direction-column">
+                        <!-- Results get displayed here-->
+                    </section>
+                    <button type="submit" class="finishBtn">Finish</button>
+                </form>
+            </section>
+
+            <footer>
+                <button class="cancelBtn">Cancel</button>
+            </footer>
+        </div>
+    </div>
 </section>
+
+
+
 
 
 {{#if logged_in}}
