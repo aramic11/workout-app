@@ -22,7 +22,7 @@ Calendar.init(
     workout_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'SessionWorkouts',
+        model: 'session_workouts',
         key: 'id',
       },
     },
