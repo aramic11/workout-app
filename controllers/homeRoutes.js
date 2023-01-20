@@ -22,6 +22,17 @@ router.get('/exercise', (req, res) => {
   res.redirect('/login');
 });
 
+// Requires login to use calendar
+router.get('/calendar', (req, res) => {
+  if (req.session.logged_in) {
+    res.render('calendar', {
+      logged_in: req.session.logged_in,
+    });
+    return;
+  }
+  res.redirect('/login');
+});
+
 // Returns user to homepage if they were already logged in
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
