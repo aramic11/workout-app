@@ -28,7 +28,13 @@ const signupFormHandler = async (event) => {
   const name = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
-
+  console.table({name, email, password});
+  const rePass = document.querySelector('#passRetype').value.trim();
+  if (password !== rePass){
+    alert('Passwords do no match. Please try again.')
+    return;
+  }
+  
   if (name && email && password) {
     const response = await fetch('/api/users', {
       method: 'POST',

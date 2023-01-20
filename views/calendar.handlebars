@@ -1,5 +1,35 @@
-<div class="text-center">
-{{!-- Will look into adding a calendar functionality (maybe new technology?).  --}}
+<h2>Calendar</h2>
+<div class="row">
+  <table class="calendarTable">
+    <thead>
+      <tr>
+        <th>Workout</th>
+        <th>Set Number</th>
+        <th>Rep Amount</th>
+        <th>Weight</th>
+        <th>Weight Type</th>
+        <th>Comments</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+        <tbody>
+        {{#each workouts}}
+                <tr>
+    
+                    <td>{{SessionWorkouts.exercise_name}}</td>
+                    <td>{{SessionWorkouts.set_number}}</td>
+                    <td>{{SessionWorkouts.rep_amount}}</td>
+                    <td>{{SessionWorkouts.weight}}</td>
+                    <td>{{SessionWorkouts.weight_type}}</td>
+                    <td>{{SessionWorkouts.comments}}</td>
+                    <td>{{SessionWorkouts.date}}</td>
+                    {{!-- <td><button class="deleteBtn">Remove Workout</button></td> --}}
+                    
+                </tr>
+        {{else}}
+        <p>No workouts to display</p>
+        {{/each}}
+        </tbody>
+    </table>
 </div>
-<div id="calendar"></div>
-<script src = "/js/calendar.js"></script>
+<script src='/js/calendar.js'></script>
