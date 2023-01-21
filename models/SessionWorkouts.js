@@ -53,6 +53,10 @@ SessionWorkouts.init(
               model: 'user',
               key: 'id'
             }
+          },
+          date: {
+            type: DataTypes.DATE,
+            defaultValue: new Date()
           }
     },
     {
