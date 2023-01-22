@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const User = require('../models');
+const { User, SessionWorkouts } = require('../models');
 const withAuth = require('../utils/auth');
 
 
@@ -23,10 +23,14 @@ router.get('/exercise', (req, res) => {
 });
 
 // Requires login to use calendar
-router.get('/calendar', (req, res) => {
+router.get('/calendar', async (req, res) => {
   if (req.session.logged_in) {
+    const calendarData = await SessionWorkouts.findAll({});
+    const calendars = calendarData.map((calendar) => calendar.get({ plain: true }));
+    console.log(calendars)
     res.render('calendar', {
       logged_in: req.session.logged_in,
+      calendars,
     });
     return;
   }
