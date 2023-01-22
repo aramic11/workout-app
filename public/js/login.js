@@ -24,7 +24,7 @@ const loginFormHandler = async (event) => {
 
 const signupFormHandler = async (event) => {
   event.preventDefault();
-  let verificationCode;
+  // let verificationCode;
   const name = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
@@ -48,10 +48,12 @@ if (name && email && password) {
 
     if (response.ok) {
       // document.location.replace('/calendar');
-      verificationCode = prompt("An email has been sent with a verification code. Please enter code to verify your account.");
-      let verifiedResponse;
+      let verificationCode;
+      while (verificationCode == null) verificationCode = prompt("An email has been sent with a verification code. Please enter code to verify your account.");
+      
       if (verificationCode) {
-        verifiedResponse = await fetch('/api/users/verify', {
+        console.log(verificationCode)
+        const verifiedResponse = await fetch('/api/users/verify', {
           method: 'POST',
           body: JSON.stringify({
             name: name?.trim(),
@@ -62,11 +64,14 @@ if (name && email && password) {
           headers: { 'Content-Type': 'application/json' },
         });
         console.log(verifiedResponse);
+        if (verifiedResponse) {
+          alert('Your email has been verified! Redirecting to the homepage');
+          await fetch('/api/calendar', {
+            method: 'GET'
+          })
+        }
       }
-      if (verifiedResponse) {
-        alert('Your email has been verified! Redirecting to the homepage');
-        
-      }
+
 
       // if true, document.location.replace('/calendar');
       // if false, alert("verification failed") document.location.replace('/calendar');
