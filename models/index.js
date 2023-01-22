@@ -1,4 +1,3 @@
-const Calendar = require('./Calendar');
 const Program = require('./Program');
 const Session = require('./Session');
 const ProgramWorkouts = require('./ProgramWorkouts');
@@ -43,7 +42,6 @@ User.hasMany(Program, {
 
 
 module.exports = {
-  Calendar,
   Program,
   ProgramWorkouts,
   Session,
