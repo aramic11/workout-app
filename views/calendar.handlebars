@@ -1,4 +1,4 @@
-<h1 class="calendarTitle">Schedule</h1>
+<h1 class="calendarTitle">Calendar</h1>
 <div class="row">
   <table class="table table-bordered">
     <thead>
@@ -10,21 +10,21 @@
         <th>Weight Type</th>
         <th>Comments</th>
         <th>Date</th>
-        <th>Remove from Schedule</th>
+        <th>Remove from Calendar</th>
       </tr>
     </thead>
         <tbody>
-        {{#each workouts}}
+        {{#each calendars as |calendar| }}
                 <tr>
     
-                    <td>{{SessionWorkouts.exercise_name}}</td>
-                    <td>{{SessionWorkouts.set_number}}</td>
-                    <td>{{SessionWorkouts.rep_amount}}</td>
-                    <td>{{SessionWorkouts.weight}}</td>
-                    <td>{{SessionWorkouts.weight_type}}</td>
-                    <td>{{SessionWorkouts.comments}}</td>
-                    <td>{{SessionWorkouts.date}}</td>
-                    <td><button class="deleteBtn">Remove Workout</button></td>
+                    <td>{{calendar.exercise_name}}</td>
+                    <td>{{calendar.set_number}}</td>
+                    <td>{{calendar.rep_amount}}</td>
+                    <td>{{calendar.weight}}</td>
+                    <td>{{calendar.weight_type}}</td>
+                    <td>{{calendar.comments}}</td>
+                    <td>{{calendar.date}}</td>
+                    <td><button class="deleteBtn" data-id={{calendar.session_id}}>Remove Workout</button></td>
                     
                 </tr>
         {{else}}
