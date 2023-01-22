@@ -22,7 +22,7 @@ router.get('/exercise', (req, res) => {
   res.redirect('/login');
 });
 
-// Requires login to use calendar
+// Gets database information, trims the data to the necessary information, and then renders if user is logged in
 router.get('/calendar', async (req, res) => {
   if (req.session.logged_in) {
     const calendarData = await SessionWorkouts.findAll({});

@@ -12,6 +12,8 @@ fetch ('/api/SessionWorkouts', {
     },
   });
 
+  // Adds functionality to the remove workout buttons
+
 const deleteButton = document.querySelectorAll("deleteBtn")
 for (let i = 0; i < deleteButton.length + 1; i++) {
   deleteButton[i].addEventListener("click", delButtonHandler)
