@@ -2,9 +2,9 @@
     text-align: center;
 }
 
-.modal-card{
+.modal-card {
     overflow: auto;
-  }
+}
 
 .counter {
     display: none;
@@ -15,22 +15,28 @@
     flex-direction: column;
 }
 
+.quick {
+    display: none;
+}
+
 .searchResultSection {
     display: none;
-   
+
 }
 
 .moreInfo {
     display: none;
 }
 
-.moreBtn{
+.moreBtn {
     margin-bottom: 15px;
 }
+
 .setupSection {
     display: none;
     align-items: center;
 }
+
 .savedExercisesContainer {
     display: none;
     padding: 15px;
@@ -45,16 +51,54 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
 }
-.openExerciseLog th{
+
+.openExerciseLog th {
     padding: 5px;
 }
 
-.openExerciseLog td{
+.openExerciseLog td {
     padding: 2px;
 }
+
+.selectProgramContainer {
+    display: none;
+}
+
+.sessionSection {
+    display: none;
+}
+
+#workoutName {
+    width: fit-content;
+    text-align: center;
+}
+
+.sessionModel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 #intensityCriterias {
     display: flex;
     justify-content: center;
+}
+
+@media only screen and (max-width: 576px) {
+    .exercise-selection {
+        max-width: 380px;
+        word-wrap: break-word;
+    }
+
+    .saved-exercises {
+        max-width: 395px;
+        word-wrap: break-word;
+    }
+
+    .modal-card {
+        margin: 0px;
+    }
 }

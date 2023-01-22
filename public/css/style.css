@@ -1,6 +1,40 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+nav {
+  font-weight: bold;
+  color: white;
+  background-color: #f0f3f5;
 }
+
+header,
+.project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  background-color: #f0f3f5;
+  color: white;
+}
+
+body {
+  background-color: #eae9f4;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1vw;
+  color: white;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h4 {
+  background-color: #eae9f4;
+  font-weight: bold;
+}
+.btnColor {
+  font-weight: bold;
+  color: white;
+}
+
 
 .no-button {
   background: none;
@@ -21,4 +55,30 @@ header, .project:not(:last-child) {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
+}
+
+.openExerciseLog {
+  border: solid 2.5px grey;
+}
+
+.openExerciseLog td {
+  border: solid 1.5px grey;
+}
+
+.exerciseLog {
+  border: solid 2.5px grey;
+}
+
+.exerciseName {
+  font-weight: bold;
+}
+
+.program {
+  font-weight: bold;
+  border-bottom: solid rgb(185, 184, 184) 2px;
+  background-color: rgb(179, 174, 174);
+}
+
+footer {
+  background-color: rgba(221, 221, 221, 0.613);
 }
