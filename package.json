@@ -24,7 +24,8 @@
     "nodemailer": "^6.9.0",
     "passport": "^0.6.0",
     "passport-google-oauth2": "^0.2.0",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "eslint": "^7.12.1",

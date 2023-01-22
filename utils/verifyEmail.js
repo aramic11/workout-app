@@ -1,6 +1,10 @@
 const nodemailer = require('nodemailer');
--
+const { User } = require('../models');
+require('dotenv').config();
 
+const verifyEmail = async (email, uuid) => {
+    try {
+        
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -11,9 +15,9 @@ const nodemailer = require('nodemailer');
 
   const mailOptions = {
     from: 'workoutapp.com',
-    to: 'noahcote10@gmail.com',
+    to: email,
     subject: 'Workout App Email Verification',
-    text: 'Welcome to the Workout App! Use this code to verify your email: ' + //'UUID goes here',
+    text: 'Welcome to the Workout App! Use this code to verify your email: ' + uuid,
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
@@ -21,7 +25,11 @@ const nodemailer = require('nodemailer');
       console.log(error);
     } else {
       console.log('Email sent: ' + info.response);
-      // do something useful
     }
   });
+} catch (e) {
+    console.log(error)
+}
+};
 
+module.exports = verifyEmail;
