@@ -53,6 +53,10 @@ SessionWorkouts.init(
               model: 'user',
               key: 'id'
             }
+          },
+          date: {
+            type: DataTypes.DATE,
+            defaultValue: new Date()
           }
     },
     {
@@ -60,7 +64,7 @@ SessionWorkouts.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'sessionWorkouts',
+        modelName: 'session_workouts',
     }
 );
 
