@@ -9,25 +9,25 @@ SessionWorkouts.belongsTo(Session, {
 });
 
 Session.hasMany(SessionWorkouts, {
-  foreignKey: 'session_id',
+  foreignKey: 'workout_id',
   onDelete: 'CASCADE',
 });
 
 ProgramWorkouts.belongsTo(Program, {
-  foreignKey: 'program_id',
+  foreignKey: 'workout_id',
 });
 
 Program.hasMany(ProgramWorkouts, {
-  foreignKey: 'program_id',
+  foreignKey: 'session_id',
   onDelete: 'CASCADE',
 });
 
 Session.belongsTo(User, {
-  foreignKey: 'user_id',
+  foreignKey: 'program_id',
 });
 
 User.hasMany(Session, {
-  foreignKey: 'user_id',
+  foreignKey: 'program_id',
   onDelete: 'CASCADE',
 });
 
