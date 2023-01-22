@@ -1,4 +1,5 @@
 const loginFormHandler = async (event) => {
+  console.log("Running");
   event.preventDefault();
 
   // Collect values from the login form
