@@ -15,7 +15,7 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace('/calendar');
+      document.location.replace('/');
     } else {
       alert(response.statusText);
     }
@@ -75,6 +75,7 @@ if (name && email && password) {
 
       // if true, document.location.replace('/calendar');
       // if false, alert("verification failed") document.location.replace('/calendar');
+
     } else {
       alert(response.statusText);
     }
