@@ -1,3 +1,4 @@
+// const { formatDate } = require('fullcalendar');
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
@@ -55,7 +56,8 @@ SessionWorkouts.init(
             }
           },
           date: {
-            type: DataTypes.DATE,
+            type: DataTypes.DATEONLY,
+            allowNull: false,
             defaultValue: new Date()
           }
     },

@@ -1,4 +1,5 @@
-<h1 class="calendarTitle">Calendar</h1>
+<h1 class="calendarTitle text-center">Calendar</h1>
+{{#if calendars.length}}
 <div class="row">
   <table class="table table-bordered">
     <thead>
@@ -8,7 +9,6 @@
         <th>Rep Amount</th>
         <th>Weight</th>
         <th>Weight Type</th>
-        <th>Comments</th>
         <th>Date</th>
         <th>Remove from Calendar</th>
       </tr>
@@ -18,13 +18,12 @@
                 <tr>
     
                     <td>{{calendar.exercise_name}}</td>
-                    <td>{{calendar.set_number}}</td>
+                    <td>{{calendar.set_amount}}</td>
                     <td>{{calendar.rep_amount}}</td>
                     <td>{{calendar.weight}}</td>
                     <td>{{calendar.weight_type}}</td>
-                    <td>{{calendar.comments}}</td>
-                    <td>{{calendar.date}}</td>
-                    <td><button class="deleteBtn" data-id={{calendar.session_id}}>Remove Workout</button></td>
+                    <td>{{calendar.selectedDate}}</td>
+                    <td><button class="deleteBtn" data-id="{{calendar.program_id}}">Remove Workout</button></td>
                     
                 </tr>
         {{else}}
@@ -33,4 +32,6 @@
         </tbody>
     </table>
 </div>
+{{/if}}
 <script src='/js/calendar.js'></script>
+<script src='/js/exercise.js'></script>

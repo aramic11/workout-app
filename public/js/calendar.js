@@ -35,4 +35,5 @@ for (let i = 0; i < deleteButton.length + 1; i++) {
     }
   };
 
+
 // get data, iterate with for loop, if day of week matches, append div button workout

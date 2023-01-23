@@ -2,6 +2,18 @@ const router = require('express').Router();
 const { User } = require('../../models');
 const { v4: uuidv4 } = require('uuid');
 const verifyEmail = require('../../utils/verifyEmail');
+// Get Routes
+router.get('/verify', async (req, res) => {
+  try {
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] }
+    });
+    res.status(200).json(userData);
+  } catch (error) {
+        res.status(500).json(err);
+    console.log(err);
+  }
+});
 // Post Routes
 // Creates a new user
 router.post('/', async (req, res) => {
@@ -12,16 +24,13 @@ router.post('/', async (req, res) => {
       verify_email: uuid,
     });
     verifyEmail(userData.email, uuid);
-    // req.session.save(() => {
-    //   req.session.user_id = userData.id;
-    //   req.session.logged_in = true;
-    // });
     res.status(200).json(userData);
   } catch (err) {
     res.status(500).json(err);
     console.log(err);
   }
 });
+// Changes user status to verified
 router.post('/verify', async (req, res) => {
   try {
     const userData = await User.findOne({
