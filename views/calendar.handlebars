@@ -1,4 +1,5 @@
-<h1 class="calendarTitle">Calendar</h1>
+<h1 class="calendarTitle text-center">Calendar</h1>
+{{#if calendars.length}}
 <div class="row">
   <table class="table table-bordered">
     <thead>
@@ -24,7 +25,7 @@
                     <td>{{calendar.weight_type}}</td>
                     <td>{{calendar.comments}}</td>
                     <td>{{calendar.date}}</td>
-                    <td><button class="deleteBtn" data-id={{calendar.session_id}}>Remove Workout</button></td>
+                    <td><button class="deleteBtn" data-id="{{calendar.session_id}}">Remove Workout</button></td>
                     
                 </tr>
         {{else}}
@@ -33,4 +34,5 @@
         </tbody>
     </table>
 </div>
+{{/if}}
 <script src='/js/calendar.js'></script>
