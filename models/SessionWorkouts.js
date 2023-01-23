@@ -1,3 +1,4 @@
+const { formatDate } = require('fullcalendar');
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
