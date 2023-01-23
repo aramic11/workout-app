@@ -2,9 +2,119 @@
     text-align: center;
 }
 
-.modal-card{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.exercise {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+    margin-bottom: 20px;
+}
+
+.createNewWorkoutBtn, .selectProgramBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.createNewWorkoutBtn:hover, .selectProgramBtn:hover {
+    background-color: #3e8e41;
+}
+
+.selectProgramContainer {
+    display: none;
+    margin-top: 10px;
+}
+
+.selectProgramContainer .programOptionSelectEl {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.selectProgramContainer .selectBtn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.selectProgramContainer .selectBtn:hover {
+    background-color: #3e8e41;
+}
+
+.sessionModel {
+    margin-top: 10px;
+}
+
+.sessionModel .date {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.sessionModel .trainingTable {
+    width: 100%;
+    /* border-collapse: collapse; */
+}
+
+.sessionModel .trainingTable th, .sessionModel .trainingTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.sessionModel .trainingTable th {
+    background-color: #f2f2f2;
+}
+
+.sessionModel .saveSesh {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sessionModel .saveSesh:hover {
+    background-color: #3e8e41;
+}
+
+/* Modal styles */
+.createWorkoutEl {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     overflow: auto;
-  }
+    background-color: rgb(0,0,0);
+}
+
+.modal-card {
+    overflow: auto;
+}
 
 .counter {
     display: none;
@@ -15,28 +125,37 @@
     flex-direction: column;
 }
 
+.quick {
+    display: none;
+}
+
 .searchResultSection {
     display: none;
-   
+
 }
 
 .moreInfo {
     display: none;
 }
 
-.moreBtn{
+.moreBtn {
     margin-bottom: 15px;
 }
+
 .setupSection {
     display: none;
     align-items: center;
 }
+
 .savedExercisesContainer {
     display: none;
     padding: 15px;
     margin-top: 10px;
 }
-
+.setupSectionEl {
+    display: none;
+    align-items: center;
+}
 .savedSection {
     display: none;
 }
@@ -45,16 +164,55 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
 }
-.openExerciseLog th{
+
+.openExerciseLog th {
     padding: 5px;
 }
 
-.openExerciseLog td{
+.openExerciseLog td {
     padding: 2px;
 }
+
+.selectProgramContainer {
+    display: none;
+}
+
+.sessionSection {
+    display: none;
+}
+
+#workoutName {
+    width: fit-content;
+    text-align: center;
+}
+
+.sessionModel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 #intensityCriterias {
     display: flex;
     justify-content: center;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .exercise-selection {
+        max-width: 380px;
+        word-wrap: break-word;
+    }
+
+    .saved-exercises {
+        max-width: 395px;
+        word-wrap: break-word;
+    }
+
+    .modal-card {
+        margin: 0px;
+    }
 }

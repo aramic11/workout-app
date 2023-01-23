@@ -1,14 +1,14 @@
 const router = require('express').Router();
-const { SessionWorkouts } = require('../../models');
+const { ProgramWorkouts } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
 
 
-// Fetch session workouts
+// Fetch program workouts
 router.get('/', withAuth, async (req, res) => {
   try {
-    const calendarData = await SessionWorkouts.findAll({
+    const calendarData = await ProgramWorkouts.findAll({
       ...req.body,
       user_id: req.session.user_id,
     });

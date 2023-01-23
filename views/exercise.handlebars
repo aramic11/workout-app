@@ -68,7 +68,7 @@
                 <p class="modal-card-title">Create New Program</p>
                 <button class="delete" aria-label="close"></button>
             </header>
-            <section>
+            <section class="modal-card-body">
                 <section class="exerciseSearchContainer">
                     <!-- To look at the saved exercises and quick search-->
                     <button class="savedExercisesBtn">View Saved Exercises</button>
@@ -81,7 +81,6 @@
                                 <option value=""></option>
                                 <option value="beginner">Beginner</option>
                                 <option value="intermediate">Intermediate</option>
-                                <option value="advanced">Advanced</option>
                             </select>
                         </section>
                         <section class="muscle">
@@ -102,7 +101,7 @@
                             </select>
                         </section>
                     </section>
-                    <section class="counter">
+                    <section class="quick">
                         <label for="quickSearch">Search</label>
                         <input id='quickSearch' type='text' class="search-bar" placeholder="Bench Press">
                     </section>
@@ -111,9 +110,9 @@
 
                     <!-- Saved Exercises section-->
                     <br>
-                    <section class="savedExercisesContainer">
+                    <section class="savedExercisesContainer" id='saved'>
                         <h4>Saved Exercises</h4>
-                        <section class="savedExerciseSection">
+                        <section class="savedExerciseSection" id="savedExercise">
                         </section>
                         <!-- To set up and remove workouts when clicked -->
                         <br>
@@ -140,16 +139,12 @@
                 </form>
             </section>
 
-            <footer>
+            <footer class="modal-card-foot">
                 <button class="cancelBtn">Cancel</button>
             </footer>
         </div>
     </div>
 </section>
-
-
-
-
 
 {{#if logged_in}}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

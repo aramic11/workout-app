@@ -1,20 +1,26 @@
 [
   {
-    "id": "",
+    "id": "1",
     "name": "Sal",
     "email": "sal@hotmail.com",
-    "password": "password12345"
+    "password": "password12345",
+    "verify_email": "false",
+    "is_verified": "false"
   },
   {
-    "id": "",
+    "id": "2",
     "name": "Lernantino",
     "email": "lernantino@gmail.com",
-    "password": "password12345"
+    "password": "password12345",
+    "verify_email": "false",
+    "is_verified": "false"
   },
   {
-    "id": "",
+    "id": "3",
     "name": "Amiko",
     "email": "amiko2k20@aol.com",
-    "password": "password12345"
+    "password": "password12345",
+    "verify_email": "false",
+    "is_verified": "false"
   }
 ]

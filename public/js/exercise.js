@@ -45,9 +45,14 @@ $('.savedExercisesBtn').click(function () {
 
 //button to show more description info the on exercises
 $(".exerciseSelections").on('click', '.moreBtn', function () {
-    $(this).next().toggle();
+    let $nextElem = $(this).next();
+    if ($nextElem.is(':visible')) {
+        $(this).text('Hide');
+    } else {
+        $(this).text('Open');
+    }
+    $nextElem.toggle();
 });
-
 
 //button to open up setup section
 $(".setupBtn").click(function () {
@@ -61,7 +66,7 @@ $(".setupBtn").click(function () {
         $('.finishBtn').show();
         startSetup();
     } else {
-        alert('Its imperative to save the workouts before moving to the setup.');
+        alert('You must save the workouts before moving to the setup.');
     }
 })
 
@@ -343,7 +348,6 @@ async function displaySetupWorkout() {
         }
         logSection.append(workoutPlanTable);
     }
-
 }
 
 //function to save all information to the database
@@ -375,7 +379,6 @@ async function saveToDB() {
                     comments: comments,
                     user_id: ""
                 }
-                //pushes
                 workoutSessionArray.push(workoutSessionEl);
             }
         }
