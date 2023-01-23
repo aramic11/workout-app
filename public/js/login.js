@@ -45,7 +45,6 @@ if (name && email && password) {
     });
 
     if (response.ok) {
-      // document.location.replace('/calendar');
       let verificationCode;
       while (verificationCode == null) verificationCode = prompt("An email has been sent with a verification code. Please enter code to verify your account.");
       
@@ -71,8 +70,7 @@ if (name && email && password) {
       }
 
 
-      // if true, document.location.replace('/calendar');
-      // if false, alert("verification failed") document.location.replace('/calendar');
+
 
     } else {
       alert(response.statusText);

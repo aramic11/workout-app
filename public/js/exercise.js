@@ -45,13 +45,7 @@ $('.savedExercisesBtn').click(function () {
 
 //button to show more description info the on exercises
 $(".exerciseSelections").on('click', '.moreBtn', function () {
-    let $nextElem = $(this).next();
-    if ($nextElem.is(':visible')) {
-        $(this).text('Hide');
-    } else {
-        $(this).text('Open');
-    }
-    $nextElem.toggle();
+    $(this).next().toggle();
 });
 
 //button to open up setup section

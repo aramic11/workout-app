@@ -24,7 +24,7 @@
     <header class="header">
 
         {{#if logged_in}}
-        <button class="no-button" id="logout">Logout</button>
+        <a class="white" id="logout">Logout</a>
         {{else}}
         <a class='white' href="/login"><span>Login</span></a>
         {{/if}}
@@ -32,8 +32,8 @@
     </header>
     <!-- Navigation bar-->
     <nav>
-        <a class='white' href="/calendar">Calendar</span></a>
-        <a class='white' href="/exercise"><span>Exercise</span></a>
+        <a href="/calendar">Calendar</span></a>
+        <a href="/exercise"><span>Exercise</span></a>
     <div class="nav-bar">
         <a class="navbar-burger">
             <span></span>
