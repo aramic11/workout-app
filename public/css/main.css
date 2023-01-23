@@ -58,7 +58,14 @@ nav a:hover {
 footer {
   background-color: #f2f2f2;
 }
-
+.homepage {
+  text-align: center;
+  text-decoration: solid;
+  font-weight: bolder;
+}
+.homepageText {
+  font-weight: bolder;
+}
 
 
 /*Login*/

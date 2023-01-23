@@ -45,7 +45,13 @@ $('.savedExercisesBtn').click(function () {
 
 //button to show more description info the on exercises
 $(".exerciseSelections").on('click', '.moreBtn', function () {
-    $(this).next().toggle();
+    let $nextElem = $(this).next();
+    if ($nextElem.is(':visible')) {
+        $(this).text('Hide');
+    } else {
+        $(this).text('Open');
+    }
+    $nextElem.toggle();
 });
 
 //button to open up setup section
@@ -342,7 +348,6 @@ async function displaySetupWorkout() {
         }
         logSection.append(workoutPlanTable);
     }
-
 }
 
 //function to save all information to the database
