@@ -18,7 +18,7 @@
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/api/session/wkts/${id}`, {
+      const response = await fetch(`/api/calendar/${id}`, {
         method: 'DELETE',
       });
   
@@ -30,10 +30,10 @@
     }
   };
 
-  const deleteButton = document.querySelectorAll(".deleteBtn")
-for (let i = 0; i < deleteButton.length + 1; i++) {
-  deleteButton[i].addEventListener("click", delButtonHandler)
-};
+const deleteButton = document.querySelectorAll(".deleteBtn")
+  for (let i = 0; i < deleteButton.length; i++) {
+    deleteButton[i].addEventListener("click", delButtonHandler)
+  };
 // document
 //   .querySelector('.deleteBtn')
 //   .addEventListener('click', delButtonHandler);

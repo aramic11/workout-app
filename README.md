@@ -5,6 +5,7 @@
 
   ## Table of Contents
   * [Description](#description)
+  * [Table of Contents](#table-of-contents)
   * [User Story](#user-story)
   * [Technologies](#technologies)
   * [Installation and Usage](#installation-and-usage)
@@ -42,17 +43,17 @@
   Expanding off of usage, here is a step-by-step guide to using the application. 
 
   ![Login]()
-  The login page has both a login and signup form. The signup form requires email verification to create the account. On any other page, if you press logout, you will be redirected to the login page. 
+  The login page has both a login and signup form. The signup form requires email verification to create the account. On any other page, if you press logout, you will be redirected to the login page. <br>
   ![Homepage]()
-  The homepage provides a brief description of the site, with a navigation bar that goes to other pages (navigation bar on all pages).
+  The homepage provides a brief description of the site, with a navigation bar that goes to other pages (navigation bar on all pages).<br>
   ![Exercise]()
-  On the exercise screen, you are presented with an example of what you can do with the page functionality. 
+  On the exercise screen, you are presented with an example of what you can do with the page functionality. <br>
   ![ExerciseSelection]()
-  When you hit "Create New Program", you enter a modal that allows you to search for a workout based on the dropdown options. You are able to search through a series of workouts categorized by muscle group, where you can choose reps, weights, weight type, and sets. Once you've created the program, you can select the program on the Exercise page and a session date to save all the information to the database. 
+  When you hit "Create New Program", you enter a modal that allows you to search for a workout based on the dropdown options. You are able to search through a series of workouts categorized by muscle group, where you can choose reps, weights, weight type, and sets. Once you've created the program, you can select the program on the Exercise page and a session date to save all the information to the database. <br>
   ![Schedule]()
-  On the schedule page, you can view all of your scheduled workouts. It will display all related attributes such as weight type and reps, and you have the option to remove the workout from your schedule. 
+  On the schedule page, you can view all of your scheduled workouts. It will display all related attributes such as weight type and reps, and you have the option to remove the workout from your schedule. <br>
   ![BMI]()
-  An additional function of the application is a BMI calculator page where users can calculate their BMI according to weight and height. 
+  An additional function of the application is a BMI calculator page where users can calculate their BMI according to weight and height. <br>
 
   ## Contributions
 
