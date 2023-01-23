@@ -54,6 +54,11 @@ ProgramWorkouts.init(
               model: 'user',
               key: 'id'
             }
+          },
+          date: {
+            type: DataTypes.DATEONLY,
+            allowNull: false,
+            defaultValue: new Date()
           }
     },
     {
