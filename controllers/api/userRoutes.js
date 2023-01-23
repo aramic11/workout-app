@@ -2,18 +2,6 @@ const router = require('express').Router();
 const { User } = require('../../models');
 const { v4: uuidv4 } = require('uuid');
 const verifyEmail = require('../../utils/verifyEmail');
-// Get Routes
-router.get('/verify', async (req, res) => {
-  try {
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] }
-    });
-    res.status(200).json(userData);
-  } catch (error) {
-        res.status(500).json(err);
-    console.log(err);
-  }
-});
 // Post Routes
 // Creates a new user
 router.post('/', async (req, res) => {
@@ -55,11 +43,10 @@ router.post('/verify', async (req, res) => {
         res.status(200).json(userData);
       });
     } else {
-      res.status(400).end();
+      res.status(404).end();
     }
   } catch (err) {
     res.status(500).json(err);
-    console.log(err);
   }
 });
 
