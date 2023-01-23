@@ -79,8 +79,8 @@ const signupFormHandler = async (event) => {
         }
       }
 
-      // if true, document.location.replace('/calendar');
-      // if false, alert("verification failed") document.location.replace('/calendar');
+
+
     } else {
       alert(response.statusText);
     }

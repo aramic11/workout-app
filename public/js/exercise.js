@@ -348,7 +348,6 @@ async function displaySetupWorkout() {
         }
         logSection.append(workoutPlanTable);
     }
-
 }
 
 //function to save all information to the database
