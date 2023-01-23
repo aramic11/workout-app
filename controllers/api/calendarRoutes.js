@@ -19,7 +19,7 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
-// router.delete('/:id', withAuth, async (req, res) => {
+// router.delete('/programWorkouts/:id', withAuth, async (req, res) => {
 //   try {
 //     const calendarData = await Calendar.destroy({
 //       where: {
@@ -29,7 +29,7 @@ router.get('/', withAuth, async (req, res) => {
 //     });
 
 //     if (!calendarData) {
-//       res.status(404).json({ message: 'No calendar found with this id!' });
+//       res.status(404).json({ message: 'No workoutfound with this id!' });
 //       return;
 //     }
 
@@ -38,5 +38,7 @@ router.get('/', withAuth, async (req, res) => {
 //     res.status(500).json(err);
 //   }
 // });
+
+
 
 module.exports = router;

@@ -1,126 +1,76 @@
-# 15 Project 2: Interactive Full-Stack Application
+# The Fitness Zone
 
-Projects play a key role in your journey to becoming a full-stack web developer. As you enter the last phase of the boot camp, you’ll begin to apply for development jobs. If you want to land interviews, your portfolio must feature high-quality deployed examples of your work—-and you can use your finished projects for that very purpose.
+  ## Description
+  The Fitness Zone is a full stack web application that allows users to find and add workouts to their schedule, with the additional option to calculate your body mass index (BMI). To access the site's functionality, user authentication is required. 
 
-As your first opportunity to show employers your collaborative skills and coding abilities, this particular project will be a focal point of your portfolio. Employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed collaborative work you have in your portfolio, the more likely you are to get an interview and a job.
+  ## Table of Contents
+  * [Description](#description)
+  * [User Story](#user-story)
+  * [Technologies](#technologies)
+  * [Installation and Usage](#installation-and-usage)
+  * [Application](#application)
+  * [Contributions](#contributions)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  * [Deployed Links](#deployed-links)
 
-## Project Requirements
+  ## User Story
+  * AS a fitness enthusiast, 
+  * I WANT to create/view a list of workout programs
+  * SO THAT I can schedule my workout routine
+  
+  ## Technologies
+  To create the front end and back end of the application, we used an assortment of technologies:
+  * Heroku
+  * MySQL
+  * Sequelize ORM
+  * Ninja API
+  * NodeMailer
+  * BCrypt
+  * Handlebars
+  * Node JS/Express.js
+  
+  ## Installation and Usage
+  You can clone the repository using the git clone command in your terminal. It is also important to remember to install dependencies, use MySQL to create the database, and then run the server. 
+  1. git clone https://github.com/aramic11/workout-app.git
+  2. npm i
+  3. mysql -uroot < db/schema.sql
+  4. node server.js
 
-You and your group will use everything you’ve learned over the past six modules to create a real-world full-stack application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
+  ## Application
 
-* Use Node.js and Express.js to create a RESTful API.
+  Expanding off of usage, here is a step-by-step guide to using the application. 
 
-* Use Handlebars.js as the template engine.
+  ![Login]()
+  The login page has both a login and signup form. The signup form requires email verification to create the account. On any other page, if you press logout, you will be redirected to the login page. 
+  ![Homepage]()
+  The homepage provides a brief description of the site, with a navigation bar that goes to other pages (navigation bar on all pages).
+  ![Exercise]()
+  On the exercise screen, you are presented with an example of what you can do with the page functionality. 
+  ![ExerciseSelection]()
+  When you hit "Create New Program", you enter a modal that allows you to search for a workout based on the dropdown options. You are able to search through a series of workouts categorized by muscle group, where you can choose reps, weights, weight type, and sets. Once you've created the program, you can select the program on the Exercise page and a session date to save all the information to the database. 
+  ![Schedule]()
+  On the schedule page, you can view all of your scheduled workouts. It will display all related attributes such as weight type and reps, and you have the option to remove the workout from your schedule. 
+  ![BMI]()
+  An additional function of the application is a BMI calculator page where users can calculate their BMI according to weight and height. 
 
-* Use MySQL and the Sequelize ORM for the database.
+  ## Contributions
 
-* Have both GET and POST routes for retrieving and adding new data.
+  Visit the public repository on Github to make pull requests or message on of our team with possible changes or concerns you find. 
 
-* Use at least one new library, package, or technology that we haven’t discussed.
+  ## Credits
 
-* Have a folder structure that meets the MVC paradigm.
+  Special thanks to the great team of people working on this:
+  * [Ahmed Ramic](https://github.com/aramic11)
+  * [Connor Bazil](https://github.com/cbazil114)
+  * [Mitchel Busnel](https://github.com/average-android)
+  * [Noah Cote](https://github.com/NoahCote10)
+  
+  ## Questions
 
-* Include authentication (express-session and cookies).
+  If you have and questions or comments, reach out to one of our team members at their respective Github pages in the credit links!
 
-* Protect API keys and sensitive information with environment variables.
-
-* Be deployed using Heroku (with data).
-
-* Have a polished UI.
-
-* Be responsive.
-
-* Be interactive (i.e., accept and respond to user input).
-
-* Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
-
-* Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
-
-## Presentation Requirements
-
-Use this [project presentation template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing) to address the following: 
-
-* Elevator pitch: a one minute description of your application
-
-* Concept: What is your user story? What was your motivation for development?
-
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
-
-* Demo: Show your stuff!
-
-* Directions for Future Development
-
-* Links to the deployed application and the GitHub repository. Use the [Guide to Deploy with Heroku and MySQL](https://coding-boot-camp.github.io/full-stack/heroku/deploy-with-heroku-and-mysql) on The Full-Stack Blog if you need a reminder on how to deploy to Heroku.
-
-## Grading Requirements
-
-This project is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 25%
-
-* Satisfies the following code requirements:
-
-  * Application uses a Node.js and Express.js back end and uses both GET and POST routes for retrieving and adding new data.
-
-  * Application has a folder structure that meets the MVC paradigm and uses Handlebars.js as the template engine.
-
-  * Application is backed by a MySQL database with a Sequelize ORM and protects API keys and sensitive information with environment variables.
-
-  * Application includes user authentication (express-session and cookies).
-
-  * Application uses at least one new library, package, or technology not covered in class.
-
-### Concept 10%
-
-* Application should be a unique and novel idea.
-
-* Your group should clearly and concisely articulate your project idea.
-
-### Deployment: 20%
-
-* Application deployed at live URL on Heroku and loads with no errors.
-
-* Application GitHub URL submitted.
-
-### Repository Quality: 10%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id-naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application is responsive.
-
-### Presentation 10%
-
-* Your group should present using a slide deck.
-
-* Every group member should speak during the presentation.
-
-* Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
-
-### Collaboration 10%
-
-* There are no major disparities in the number of GitHub contributions between group members.
-
-## How to Submit Your Interactive Full-Stack Project
-
-**Each member of your group** is required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
----
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+  ## Deployed Links
+  * [Github](https://github.com/aramic11/workout-app)
+  * [Heroku](https://mighty-inlet-17491.herokuapp.com)
+ 
