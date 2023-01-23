@@ -62,20 +62,15 @@ const signupFormHandler = async (event) => {
           }),
           headers: { 'Content-Type': 'application/json' },
         });
-        // const userCode = await fetch('/api/users/verify', {
-        //   method: 'GET',
-        //   body: JSON.stringify({
 
-        //   })
-        // });
-        if (verifiedResponse) {
+        if (verifiedResponse.ok) {
           alert('Your email has been verified! Redirecting to the homepage.');
           document.location.replace('/');
         } else {
           alert(
-            'Verification failed! Please try verification at another time. REdirecting to the homepage.'
+            'Verification failed! Please try verification at another time. Your account has been created, but you must log in again.'
           );
-          document.location.replace('/');
+          document.location.replace('/login');
         }
       }
 
