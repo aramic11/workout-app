@@ -1,3 +1,28 @@
-<div>
+<div class="container">
     <h1>BMI Calculator</h1>
 </div>
+
+<main class="display">
+   <p id="result">20.0</p>
+   <p id="category">Normal weight</p>
+    <div class="row">
+        <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">
+        <span id="weight-val">20 kg</span>
+    </div>
+    <div class="row">
+        <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()">
+        <span id="height-val">100 cm</span>
+    </div>
+</main>
+
+
+
+
+<script src="
+
+{{#if logged_in}}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/helper.js"></script>
+<script src="./js/exercise.js"></script>
+<script src="./js/calculator.js"></script>
+{{/if}}
