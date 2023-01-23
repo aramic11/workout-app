@@ -1,0 +1,21 @@
+<section class="bmi">
+   <div class="bmiSection">
+        <h1>BMI Calculator</h1>
+        <div class="display">
+            <p id="result">20.0</p>
+            <p id="category">Normal weight</p>
+         </div>
+         <div class="row">
+            <input type="range" min="20" max="500" value="20" id="weight" oninput="calculate()">
+            <span id="weight-val">20 lb</span>
+         </div>
+         <div class="row">
+            <input type="range" min="10" max="100" value="1" id="height" oninput="calculate()">
+            <span id="height-val">1 ft</span>
+          </div>
+      </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/bmi.js"></script>

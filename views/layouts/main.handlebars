@@ -24,7 +24,7 @@
     <header class="header">
 
         {{#if logged_in}}
-        <a class="white" id="logout">Logout</a>
+        <a class="white" id="logout" href="/login">Logout</a>
         {{else}}
         <a class='white' href="/login"><span>Login</span></a>
         {{/if}}
@@ -34,6 +34,7 @@
     <nav>
         <a href="/calendar">Calendar</span></a>
         <a href="/exercise"><span>Exercise</span></a>
+        <a href="/BMI"><span>BMI Calculator</span></a>
     <div class="nav-bar">
         <a class="navbar-burger">
             <span></span>
