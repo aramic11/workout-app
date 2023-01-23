@@ -11,6 +11,16 @@ router.get('/', (req, res) => {
   });
 });
 
+router.get('/calculator', (req, res) => {
+  if (req.session.logged_in) {
+    res.render('calculator', {
+      logged_in: req.session.logged_in,
+    });
+    return;
+  }
+  res.redirect('/login');
+});
+
 // Requires login to use exercise
 router.get('/exercise', (req, res) => {
   if (req.session.logged_in) {
