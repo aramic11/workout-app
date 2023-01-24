@@ -42,17 +42,17 @@
 
   Expanding off of usage, here is a step-by-step guide to using the application. 
 
-  ![Login]()
+  ![Login](/public/images/mighty-inlet-17491.herokuapp.com_login.png)
   The login page has both a login and signup form. The signup form requires email verification to create the account. On any other page, if you press logout, you will be redirected to the login page. <br>
-  ![Homepage]()
+  ![Homepage](/public/images/mighty-inlet-17491.herokuapp.com_.png)
   The homepage provides a brief description of the site, with a navigation bar that goes to other pages (navigation bar on all pages).<br>
-  ![Exercise]()
+  ![Exercise](/public/images/mighty-inlet-17491.herokuapp.com_exercise.png)
   On the exercise screen, you are presented with an example of what you can do with the page functionality. <br>
-  ![ExerciseSelection]()
+  ![ExerciseSelection](/public/images/mighty-inlet-17491.herokuapp.com_exercise%20(1).png)
   When you hit "Create New Program", you enter a modal that allows you to search for a workout based on the dropdown options. You are able to search through a series of workouts categorized by muscle group, where you can choose reps, weights, weight type, and sets. Once you've created the program, you can select the program on the Exercise page and a session date to save all the information to the database. <br>
-  ![Schedule]()
+  ![Schedule](/public/images/mighty-inlet-17491.herokuapp.com_calendar.png)
   On the schedule page, you can view all of your scheduled workouts. It will display all related attributes such as weight type and reps, and you have the option to remove the workout from your schedule. <br>
-  ![BMI]()
+  ![BMI](/public/images/mighty-inlet-17491.herokuapp.com_calculator.png)
   An additional function of the application is a BMI calculator page where users can calculate their BMI according to weight and height. <br>
 
   ## Contributions
