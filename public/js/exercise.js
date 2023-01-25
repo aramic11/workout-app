@@ -354,6 +354,7 @@ async function displaySetupWorkout() {
 async function saveToDB() {
     try {
         let selectedDate = $(".date").val();
+        console.log(selectedDate);
         let userSessionObject = {
             date: selectedDate
         }

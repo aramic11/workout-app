@@ -7,6 +7,12 @@ class ProgramWorkouts extends Model { }
 ProgramWorkouts.init(
     {
         // defines the columns
+        id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true,
+          },
         program_id: {
             type: DataTypes.INTEGER,
             references: {
@@ -58,7 +64,6 @@ ProgramWorkouts.init(
           date: {
             type: DataTypes.DATEONLY,
             allowNull: false,
-            defaultValue: new Date()
           }
     },
     {
