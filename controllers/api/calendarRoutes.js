@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { SessionWorkouts } = require('../../models');
+const { SessionWorkouts, ProgramWorkouts } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
@@ -8,6 +8,7 @@ const withAuth = require('../../utils/auth');
 // Fetch program workouts
 router.get('/', withAuth, async (req, res) => {
   try {
+    console.log(req.body)
     const calendarData = await SessionWorkouts.findAll({
       ...req.body,
       user_id: req.session.user_id,
@@ -23,7 +24,7 @@ router.get('/', withAuth, async (req, res) => {
 router.delete('/:id/', withAuth, async (req, res) => {
   try {
     console.log("running", req.params)
-    const calendarData = await SessionWorkouts.destroy({
+    const calendarData = await ProgramWorkouts.destroy({
       where: {
         id: req.params.id,
       },
