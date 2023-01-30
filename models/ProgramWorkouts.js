@@ -64,6 +64,7 @@ ProgramWorkouts.init(
           date: {
             type: DataTypes.DATEONLY,
             allowNull: false,
+            defaultValue: new Date()
           }
     },
     {
