@@ -358,6 +358,7 @@ async function saveToDB() {
         let userSessionObject = {
             date: selectedDate
         }
+        console.log(userSessionObject)
         let postUrl = `/api/session/`;
         let response = await helpers.postData(postUrl, userSessionObject);
         let id = response.id;

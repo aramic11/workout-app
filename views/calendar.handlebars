@@ -17,16 +17,28 @@
         {{#each calendars as |calendar| }}
                 <tr>
     
-                    <td>{{calendar.exercise_name}}</td>
-                    <td>{{calendar.set_amount}}</td>
-                    <td>{{calendar.rep_amount}}</td>
-                    <td>{{calendar.weight}}</td>
-                    <td>{{calendar.weight_type}}</td>
+                    <td>{{calendar.programWorkout.exercise_name}}</td>
+                    <td>{{calendar.programWorkout.set_amount}}</td>
+                    <td>{{calendar.programWorkout.rep_amount}}</td>
+                    <td>{{calendar.programWorkout.weight}}</td>
+                    <td>{{calendar.programWorkout.weight_type}}</td>
                     <td>{{calendar.date}}</td>
                     <td><button class="deleteBtn" data-id="{{calendar.id}}">Remove Workout</button></td>
                     
                 </tr>
         {{/each}}
+        {{!-- {{#each calendars as |calendar| }}
+                <tr>
+    
+                    <td>{{calendar.id}}</td>
+                    <td>{{calendar.date}}</td>
+                    <td>{{calendar.programWorkout.exercise_name}}</td>
+                    <td>{{calendar.programWorkout.set_amount}}</td>
+                    <td>{{calendar.programWorkout.rep_amount}}</td>
+                    <td><button class="deleteBtn" data-id="{{calendar.id}}">Remove Workout</button></td>
+                    
+                </tr>
+        {{/each}} --}}
         </tbody>
     </table>
 </div>

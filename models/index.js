@@ -22,8 +22,16 @@ Program.hasMany(ProgramWorkouts, {
   onDelete: 'CASCADE',
 });
 
+ProgramWorkouts.belongsTo(Session, {
+  foreignKey: 'program_id'
+})
+
+Session.hasOne(ProgramWorkouts, {
+  foreignKey: 'program_id'
+})
+
 Session.belongsTo(User, {
-  foreignKey: 'program_id',
+  foreignKey: 'user_id',
 });
 
 User.hasMany(Session, {
